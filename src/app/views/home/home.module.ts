@@ -5,6 +5,8 @@ import { HomeRoutingModule } from './home-routing.module';
 import { CoreModule } from 'src/app/core/core.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FoodListComponent } from './food-list/food-list.component';
+import { NgMaterialModule } from 'src/app/shared/ng-material/ng-material.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -12,7 +14,9 @@ import { FoodListComponent } from './food-list/food-list.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    CoreModule
+    CoreModule,
+    NgMaterialModule,
+    SharedModule
   ]
 })
 export class HomeModule { }

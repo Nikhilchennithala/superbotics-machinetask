@@ -1,1 +1,23 @@
-<p>food-list works!</p>
+<div class="p-4">
+    <div class="row">
+        <div class="col-4 p-4" *ngFor="let item of fruits | filterFood : searchQuery">
+            <div (click)="productview(item)">
+              <mat-card>
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>{{item.name}}</mat-card-title>
+                  <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+                </mat-card-header>
+                <img mat-card-image src="../../../../assets/img/food1.jfif" alt="Photo of a food">
+                <mat-card-content>
+                  <p>
+                    I have to say, I enjoyed every single bite of the meal in (RN). I had a 3 course meal, with a couple of beers. 
+                    Considering the quality, the price is reasonable. Ideal for those who want a romantic night out. 
+                    There was also plenty of room for bigger groups.
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </div>  
+        </div>
+    </div>
+</div>

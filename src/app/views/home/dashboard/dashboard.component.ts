@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  searchValue: string;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  search(e): void {
+    console.log('okokokok', e)
+    this.searchValue = e;
   }
 
 }
